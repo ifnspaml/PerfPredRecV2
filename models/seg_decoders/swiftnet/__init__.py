@@ -1,0 +1,1 @@
+from models.seg_decoders.swiftnet.fw_adaptor import SwiftNet, load_state_dict_into_model

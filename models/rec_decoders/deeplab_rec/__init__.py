@@ -1,0 +1,1 @@
+from models.rec_decoders.deeplab_rec.fw_adaptor import DeepLabRec

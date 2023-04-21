@@ -1,0 +1,1 @@
+from models.rec_decoders.monodepth_rec.fw_adaptor import MonoDepthRec, load_state_dict_into_model
