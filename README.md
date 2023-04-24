@@ -179,7 +179,7 @@ The model weights with the lowest prediction errors as reported in the paper:
   <tr>
     <td class="tg-0pky">DeepLabV3+</td>
     <td class="tg-0pky">ResNet-50</td>
-    <td class="tg-0pky">1*</td>
+    <td class="tg-0pky">1</td>
     <td class="tg-0pky">-</td>
     <td class="tg-0pky"></td>
     <td class="tg-0pky"></td>
