@@ -4,7 +4,6 @@ from .semseg import SemsegModel
 from ... encoders.resnet.full_network import resnet18, resnet50
 from ... encoders.convnext.full_network import convnext_tiny
 
-
 # --------------------------------------------------------------------------------
 #  Custom function for the specific model architecture to load/update state_dict
 # --------------------------------------------------------------------------------
@@ -49,6 +48,7 @@ class SwiftNet(nn.Module):
         elif encoder == 'convnext_tiny':
             resnet = convnext_tiny(pretrained=True, in_22k=False)
         elif encoder == 'swin_t':
+            from ...encoders.swin_transformer.swin import SwinSeg
             resnet = SwinSeg(pretrained=True)
         else:
             ValueError(f"Encoder/backbone {encoder} is not recognized.")
