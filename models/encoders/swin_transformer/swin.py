@@ -5,7 +5,7 @@ import torch.nn as nn
 from transformers import SwinConfig, SwinModel
 
 from itertools import chain
-from ..util import SpatialPyramidPoolingGELU, _UpsampleGELU
+from ...util import SpatialPyramidPoolingGELU, _UpsampleGELU
 
 class SwinSeg(nn.Module):
     def __init__(self, atrous=False, 
@@ -73,8 +73,6 @@ def build_backbone(height=768, width=768, window_size=8, pretrained=True):
         model = SwinModel.from_pretrained("microsoft/swin-tiny-patch4-window7-224")
     else:
         model = SwinModel()
-    print(model.config)
-    exit(0)
     model.config.window_size = window_size
     model.config.image_size = height
     model.config.image_size = width

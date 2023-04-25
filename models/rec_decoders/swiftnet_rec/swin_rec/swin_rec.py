@@ -1,5 +1,4 @@
-#!/usr/bin/env python
-from ... swin_transformer import SwinSeg
+from ....encoders.swin_transformer import SwinSeg
 
 class SwinRec(SwinSeg):
     def __init__ (self, pretrained=True):
