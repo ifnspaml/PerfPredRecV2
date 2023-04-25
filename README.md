@@ -82,8 +82,9 @@ The model weights with the lowest prediction errors as reported in the paper:
   <tr>
     <th class="tg-0pky" rowspan="2">Decoder</th>
     <th class="tg-0pky" rowspan="2">Encoder</th>
+    <th class="tg-0pky" rowspan="2">Init.</th>
     <th class="tg-0pky" rowspan="2">&Delta;d</th>
-    <th class="tg-0pky" rowspan="2">&lambda;<sup>IDLC</sup></th>
+    <th class="tg-0pky" rowspan="2">&Laplacetrf;<sup>IDLC</sup></th>
     <th class="tg-0pky" colspan="3">CS val</th>
     <th class="tg-0pky" colspan="3">KIT val</th>
     <th class="tg-0pky" rowspan="2">Download link</th>
@@ -101,6 +102,7 @@ The model weights with the lowest prediction errors as reported in the paper:
   <tr>
     <td class="tg-0pky">SwiftNet</td>
     <td class="tg-0pky">ResNet-18</td>
+    <td class="tg-0pky">random</td>
     <td class="tg-0pky">2</td>
     <td class="tg-0pky">2,3,4</td>
     <td class="tg-0pky">0.86</td>
@@ -114,6 +116,7 @@ The model weights with the lowest prediction errors as reported in the paper:
   <tr>
     <td class="tg-0pky">Monodepth2</td>
     <td class="tg-0pky">ResNet-18</td>
+    <td class="tg-0pky">segmentation</td>
     <td class="tg-0pky">4</td>
     <td class="tg-0pky">2,4,6,8</td>
     <td class="tg-0pky">0.83</td>
@@ -136,10 +139,12 @@ The model weights with the lowest prediction errors as reported in the paper:
     <td class="tg-0pky">-</td>
     <td class="tg-0pky">-</td>
     <td class="tg-0pky">-</td>
+    <td class="tg-0pky">-</td>
   </tr>
   <tr>
     <td class="tg-0pky">SwiftNet</td>
     <td class="tg-0pky">ResNet-50</td>
+    <td class="tg-0pky">random</td>
     <td class="tg-0pky">3*</td>
     <td class="tg-0pky">4*</td>
     <td class="tg-0pky">0.89</td>
@@ -153,6 +158,7 @@ The model weights with the lowest prediction errors as reported in the paper:
   <tr>
     <td class="tg-0pky">SwiftNet</td>
     <td class="tg-0pky">Swin-T</td>
+    <td class="tg-0pky">segmentation</td>
     <td class="tg-0pky">-</td>
     <td class="tg-0pky">2,3,4</td>
     <td class="tg-0pky">0.70</td>
@@ -166,6 +172,7 @@ The model weights with the lowest prediction errors as reported in the paper:
   <tr>
     <td class="tg-0pky">SwiftNet</td>
     <td class="tg-0pky">ConvNext-T</td>
+    <td class="tg-0pky">random</td>
     <td class="tg-0pky">4*</td>
     <td class="tg-0pky">2,3,4</td>
     <td class="tg-0pky">0.68</td>
@@ -177,22 +184,38 @@ The model weights with the lowest prediction errors as reported in the paper:
     <td class="tg-0pky"><a href="https://drive.google.com/drive/folders/1-spTAIv74z5enF78pT1ypAadrA30EtNG">model</a></td>
   </tr>
   <tr>
+    <td class="tg-0pky">-</td>
+    <td class="tg-0pky">-</td>
+    <td class="tg-0pky">-</td>
+    <td class="tg-0pky">-</td>
+    <td class="tg-0pky">-</td>
+    <td class="tg-0pky">-</td>
+    <td class="tg-0pky">-</td>
+    <td class="tg-0pky">-</td>
+    <td class="tg-0pky">-</td>
+    <td class="tg-0pky">-</td>
+    <td class="tg-0pky">-</td>
+    <td class="tg-0pky">-</td>
+  </tr>
+  <tr>
     <td class="tg-0pky">DeepLabV3+</td>
     <td class="tg-0pky">ResNet-50</td>
+    <td class="tg-0pky">random</td>
     <td class="tg-0pky">1</td>
     <td class="tg-0pky">-</td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">0.81</td>
+    <td class="tg-0pky">9.54</td>
+    <td class="tg-0pky">12.44</td>
+    <td class="tg-0pky">0.74</td>
+    <td class="tg-0pky">7.84 </td>
+    <td class="tg-0pky">9.60</td>
     <td class="tg-0pky"><a href="https://drive.google.com/drive/folders/1BRahQRNU6OEwmCXCxg0eXi0sBmaBi7RE">model</a></td>
   </tr>
   <tr>
     <td class="tg-0pky">DeepLabV3+</td>
     <td class="tg-0pky">Swin-T</td>
-    <td class="tg-0pky">2*</td>
+    <td class="tg-0pky">random</td>
+    <td class="tg-0pky">2</td>
     <td class="tg-0pky">4</td>
     <td class="tg-0pky">0.81</td>
     <td class="tg-0pky">10.53</td>
@@ -205,6 +228,7 @@ The model weights with the lowest prediction errors as reported in the paper:
   <tr>
     <td class="tg-0pky">DeepLabV3+</td>
     <td class="tg-0pky">ConvNext-T</td>
+    <td class="tg-0pky">random</td>
     <td class="tg-0pky">-</td>
     <td class="tg-0pky">4</td>
     <td class="tg-0pky">0.62</td>
