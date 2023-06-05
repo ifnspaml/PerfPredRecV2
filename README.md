@@ -39,7 +39,7 @@ If you find our code helpful or interesting for your research, please consider c
   year      = {2023},
   address   = {Vancouver, BC, Canada}
   month     = jun,
-  pages     = {1--11},
+  pages     = {219--229},
 }
 ```
 
