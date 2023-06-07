@@ -1,9 +1,9 @@
 # Improvements to Image Reconstruction-Based Performance Prediction for Semantic Segmentation in Highly Automated Driving
 [Andreas Bär](https://andrbaer.github.io/), [Daniel Kusuma](https://github.com/ksmdnl) and [Tim Fingscheidt](https://www.tu-braunschweig.de/en/ifn/institute/team/sv/fingscheidt)
 
-[Link to paper]()
+[Link to paper](https://openaccess.thecvf.com/content/CVPR2023W/WAD/papers/Bar_Improvements_to_Image_Reconstruction-Based_Performance_Prediction_for_Semantic_Segmentation_in_CVPRW_2023_paper.pdf)
 
-[Link to supplementary material]()
+[Link to supplementary material](https://openaccess.thecvf.com/content/CVPR2023W/WAD/supplemental/Bar_Improvements_to_Image_CVPRW_2023_supplemental.pdf)
 
 [Link to poster]()
 
