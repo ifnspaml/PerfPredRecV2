@@ -1,5 +1,11 @@
 # Improvements to Image Reconstruction-Based Performance Prediction for Semantic Segmentation in Highly Automated Driving
-[Andreas Bär](https://www.tu-braunschweig.de/en/ifn/institute/team/sv/baer), [Daniel Kusuma](https://github.com/ksmdnl) and [Tim Fingscheidt](https://www.tu-braunschweig.de/en/ifn/institute/team/sv/fingscheidt)
+[Andreas Bär](https://andrbaer.github.io/), [Daniel Kusuma](https://github.com/ksmdnl) and [Tim Fingscheidt](https://www.tu-braunschweig.de/en/ifn/institute/team/sv/fingscheidt)
+
+[Link to paper](https://openaccess.thecvf.com/content/CVPR2023W/WAD/papers/Bar_Improvements_to_Image_Reconstruction-Based_Performance_Prediction_for_Semantic_Segmentation_in_CVPRW_2023_paper.pdf)
+
+[Link to supplementary material](https://openaccess.thecvf.com/content/CVPR2023W/WAD/supplemental/Bar_Improvements_to_Image_CVPRW_2023_supplemental.pdf)
+
+[Link to poster]()
 
 ## Idea Behind the Paper
 **System Overview**
@@ -31,9 +37,9 @@ If you find our code helpful or interesting for your research, please consider c
   booktitle = {Proc. of CVPR - Workshops},
   title     = {{Improvements to Image Reconstruction-Based Performance Prediction for Semantic Segmentation in Highly Automated Driving}},
   year      = {2023},
-  address   = {Vancouver, Canada,
+  address   = {Vancouver, BC, Canada}
   month     = jun,
-  pages     = {4399--4408},
+  pages     = {219--229},
 }
 ```
 
@@ -60,23 +66,6 @@ The following tables include the Peason correlation coefficient, the absolute an
 
 The model weights with the lowest prediction errors as reported in the paper:
 
-<!-- Add hyperparameter into the table:
-- Delta_D in models from sup materials with *
-- Under the table explain/mention the typo
- -->
-
-<!-- | Decoder | Encoder  |  $\rho$ | $\Delta^{M}$ | $\Delta^{R}$ | $\rho$ | $\Delta^{M}$ | $\Delta^{R}$| Download link |
-|---------|----------|--------|--------------|--------------|--------|--------------|-------------|---------------|
-| RN-18   | SwiftNet |        |            ||||||| -->
-
-<!-- <style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
-</style> -->
 <table class="tg">
 <thead>
   <tr>
@@ -280,8 +269,7 @@ pip install "git+https://github.com/ifnspaml/TUBSRobustCheck.git"
 For reference: The `environment.yml` was created by exporting the environment via `conda env export > environment.yml` on our Linux cluster.
 
 ## Training
-For training according to our method, please first use `train_seg.py` to train the segmentation models and then `train_rec.py` (loading a trained SwiftNet for semantic segmentation (frozen weights) and train an additional reconstruction decoder).
-<!-- Please refer to `swiftnet.sh` and `swiftnet_rec.sh` for example usages. -->
+For training according to our method, please first use `train_seg.py` to train the segmentation models and then `train_rec.py` (loading a trained SwiftNet for semantic segmentation (frozen weights) and train an additional reconstruction decoder). Please refer to `train_seg.sh` and `train_rec.sh` for example usages.
 
 ## Evaluation On Clean And Corrupted Images
 For evaluation according to our method, please use `eval/eval_attacks_n_noise.py`. Please refer to `eval/attacks.sh` for example usages.
@@ -297,8 +285,7 @@ Example output files can be found in the folder `output`.
 
 ## License
 The original SwiftNet model in this project was developed by Marin Oršić et al. [here](https://github.com/orsic/swiftnet).
-
-Further, we refer to [mmseg](https://github.com/open-mmlab/mmsegmentation)'s implementation for the DeepLabV3+ model
-
 The Project was released under the GNU General Public License v3.0. This code modifies some parts of the original code and
 is therefore also licensed under the GNU General Public License v3.0. Please feel free to use it within the boundaries of this license.
+
+Further, we refer to [mmseg](https://github.com/open-mmlab/mmsegmentation)'s implementation for the DeepLabV3+ model and our previous GitHub repository [PerfPredRec](https://github.com/ifnspaml/PerfPredRec).
