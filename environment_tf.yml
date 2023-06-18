@@ -231,7 +231,5 @@ dependencies:
   - zlib=1.2.13=h166bdaf_4
   - zstd=1.5.2=h6239696_4
   - pip:
-    - dataloader==0.1
     - opencv-python==4.5.5.62
-    - robustness==0.1
 prefix: /home/kusuma/.conda/envs/swiftnet-pp-v2-tf
