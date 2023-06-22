@@ -23,7 +23,7 @@ def load_state_dict_into_model(model, pretrained_dict):
 
 # Class SwiftNetRec based on SwiftNet and an separate Autoencoder-Decoder for Image-Upsampling
 class SwiftNetRec(nn.Module):
-    def __init__(self, num_classes_wo_bg, encoder='resnet18', delta_d=0, idlc=[0,0,0], route='alt_fw', **kwargs):
+    def __init__(self, num_classes_wo_bg, encoder='resnet18', delta_d=0, idlc=[0,0,0], route='lat_bw', **kwargs):
         super().__init__()
         # Create the SwiftNet model
         self.encoder = encoder
