@@ -10,7 +10,7 @@ from ...util import upsample
 from .config import decoder_layers
 
 class SemsegModel(nn.Module):
-    def __init__(self, backbone, encoder='resnet18', delta_d=0, route='fw', idlc=[0,0]):
+    def __init__(self, backbone, encoder='resnet18', delta_d=0, route='bw', idlc=[0,0]):
         super().__init__()
         self.backbone = backbone
         num_layers = 3 # (R, G, B) channel
