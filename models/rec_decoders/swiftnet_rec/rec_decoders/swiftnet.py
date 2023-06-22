@@ -12,7 +12,7 @@ MEAN = torch.tensor([[[[0.485, 0.456, 0.406]]]]).permute(0, 3, 1, 2).to(device='
 STD = torch.tensor([[[[0.229, 0.224, 0.225]]]]).permute(0, 3, 1, 2).to(device='cuda')
 
 class SwiftNetDecoder(nn.Module):
-    def __init__(self, block=BasicBlock, delta_d=0, idlc=0, route='alt_fw', *, num_features=128, k_up=3, use_bn=True, use_skips=True, use_spp=False, inplanes=64, dims=[96, 192, 384, 768]):
+    def __init__(self, block=BasicBlock, delta_d=0, idlc=0, route='lat_bw', *, num_features=128, k_up=3, use_bn=True, use_skips=True, use_spp=False, inplanes=64, dims=[96, 192, 384, 768]):
 
         super().__init__()  # inherit from higher parents class
         # TODO: Adjust the inplanes depending on the backbone network. inplanes(rn50) = 256, inplace(cn-t) = 96
